@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import { getRandomNum, gameLogic } from './index.js';
+import { gameLogic, OneNumQuestion } from './index.js';
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
@@ -16,8 +16,7 @@ const isPrime = (number) => {
 };
 
 export const game = () => {
-  const number = getRandomNum(100);
-  console.log(`Question: ${number}`);
+  const number = OneNumQuestion();
   const userAnswer = readlineSync.question('Your answer: ');
   const correctAnswer = (isPrime(number) ? 'yes' : 'no');
   return { userAnswer, correctAnswer };

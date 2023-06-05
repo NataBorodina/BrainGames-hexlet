@@ -1,3 +1,5 @@
+[![Maintainability](https://api.codeclimate.com/v1/badges/f9ac0db50e30c16dacac/maintainability)](https://codeclimate.com/github/NataBorodina/BrainGames-hexlet/maintainability)
+
 # BrainGames-hexlet
 Brain Games is a set of five console games based on popular mobile brain training apps
 Each game asks questions that need to be answered correctly. After three correct answers, the game is considered to be completed. Wrong answers end the game and offer to play it again.

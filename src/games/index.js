@@ -3,6 +3,11 @@ import readlineSync from 'readline-sync';
 const welcome = () => console.log('Welcome to the Brain Games!');
 const getName = () => readlineSync.question('May I have your name? ');
 const getRandomNum = (max) => Math.floor(Math.random() * max) + 1;
+const OneNumQuestion = function() {
+  const number = getRandomNum(100);
+  console.log(`Question: ${number}`);
+  return number;
+};
 const takeCongratulations = (name) => {
   const congratulations = `Congratulations, ${name}!`;
   console.log(congratulations);
@@ -29,5 +34,5 @@ const gameLogic = (description, game, takeCorrectAnswer) => {
 };
 
 export {
-  getRandomNum, gameLogic,
+  getRandomNum, gameLogic, OneNumQuestion,
 };

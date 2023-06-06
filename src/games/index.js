@@ -18,8 +18,8 @@ const gameLogic = (description, game) => {
   console.log(description);
 
   for (let i = 1; i <= roundsCount; i += 1) {
-    const [number, correctAnswer] = game();
-    console.log(`Question: ${number}`);
+    const [question, correctAnswer] = game();
+    console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
     if (userAnswer !== correctAnswer) {
       errorMessage(userAnswer, correctAnswer, userName);
